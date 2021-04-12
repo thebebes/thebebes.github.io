@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+
+    <title>GRAYSCALE</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #logo {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.5);
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style: none;
+            position: absolute;
+            right: 0;
+            margin-right: 70px;
+        }
+
+        nav li {
+            display: inline-block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            margin-left: 60px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            padding: 30px;
+            /*            margin-right: 50px;*/
+        }
+
+        header {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #banner {
+            color: white;
+            padding: 100px;
+            text-align: center;
+        }
+
+        #banner h1 {
+            font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 104px;
+            letter-spacing: 0.8rem;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-weight: 400;
+        }
+
+        #banner h3 {
+            font-family: 'Nunito', sans-serif;
+            color: #acadae;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        header button {
+            background-color: rgb(100, 161, 157);
+            color: white;
+            padding: 21px 36px;
+            margin-top: 54px;
+            border-radius: 4px;
+            letter-spacing: 2px;
+            border: none;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        #intro {
+            color: white;
+            background: linear-gradient(black, #303030);
+            text-align: center;
+        }
+
+        #intro h2 {}
+
+        #intro img {
+            width: 80%;
+        }
+
+        #intro p {
+            padding: 30px 75px 80px 75px;
+        }
+
+        #gallery {
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        #gallery .desc {
+            padding: 10px 75px 50px 75px;
+            background-color: black;
+            color: white;
+            margin-top: -4px;
+        }
+
+        #gallery p {
+            /*            color: rgba(255, 255, 255, 0.5)*/
+        }
+
+        #gallery .image {
+            width: 500px;
+            /*            border: solid blue 10px;*/
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        #gallery img {
+            width: 100%;
+        }
+
+        #gallery .desc.light {
+            padding: 50px 20px;
+            background-color: white;
+            color: black
+        }
+
+        #gallery .desc.dark {
+            padding: 50px 20px;
+        }
+
+        #subscription {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg);
+            color: white;
+            text-align: center;
+            padding: 150px 0px;
+            background-size: cover;
+            backdrop-filter: blur(10px);
+        }
+
+        input {
+            width: 360px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: auto;
+            height: 50px;
+            border: 9px;
+            padding: 5px 31px;
+            letter-spacing: 3px;
+            font-family: 'Nunito', sans-serif;
+            margin-right: 4px;
+        }
+
+        #subscribebutton {
+            border-radius: 5px;
+            border: none;
+            background-color: #6BB1AC;
+            color: white;
+            padding: 22px 30px;
+            letter-spacing: 2.5px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+        }
+
+        #subscription h2 {
+            margin-bottom: 45px;
+            font-size: 32px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .far.fa-paper-plane {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div id="logo">Start Bootstrap</div>
+            <ul>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+
+            </ul>
+        </nav>
+        <div id='banner'>
+            <h1>GRAYSCALE</h1>
+            <h3>A free, responsive, one page Bootsrtap theme</h3>
+            <h3>created by Start Bootstrap.</h3>
+            <button>GET STARTED</button>
+        </div>
+    </header>
+    <div id="intro">
+        <h2>Built with Bootstrap 4</h2>
+        <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="https://startbootstrap.com/previews/grayscale">the preview page</a> . The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+        <img src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/ipad.png" alt="">
+    </div>
+    <div id="gallery">
+        <div class="image">
+            <img src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg" alt="">
+            <div class="desc light">
+                <h2>Shoreline</h2>
+                <p>Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/demo-image-01.jpg" alt="">
+            <div class="desc dark">
+                <h2>Misty</h2>
+                <p>An example of where you can put an image of a project, or anything else, along with a description.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/demo-image-02.jpg" alt="">
+            <div class="desc dark">
+                <h2>Mountains</h2>
+                <p>Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+            </div>
+        </div>
+    </div>
+    <div id="subscription">
+        <i class="far fa-paper-plane"></i>
+        <h2>Subscribe to receive updates!</h2>
+        <form action="">
+            <input type="text" placeholder="ENTER EMAIL ADDRESS...">
+            <button id='subscribebutton'>SUBSCRIBE</button>
+        </form>
+    </div>
+    <div id="contact">
+        <div class="bro">
+            <i class="fas fa-map-marked-alt"></i>
+            <div class="title">ADDRESS</div>
+            <hr>
+            <p>4923 Market Street, Orlando FL</p>
+        </div>
+        <div class="bro">
+            <i class="fas fa-envelope"></i>
+            <div class="title">EMAIL</div>
+            <hr>
+            <p>hello@yourdomain.com</p>
+        </div>
+        <div class="bro">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="title">PHONE</div>
+            <hr>
+            <p>+1 (555) 902-8832</p>
+        </div>
+    </div>
+</body></html>
+
+

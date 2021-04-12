@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Age</title>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #phone {
+            width: 100%;
+            z-index: 0;
+
+        }
+
+        #device {
+            position: relative;
+            width: 325px;
+            margin: auto;
+            margin-top: 95px;
+        }
+
+        #picture {
+            width: 285.2px;
+            z-index: 1;
+            position: absolute;
+            top: 72px;
+            left: 20px;
+            text-align: center;
+        }
+
+        header {
+            color: white;
+            background: url(https://startbootstrap.github.io/startbootstrap-new-age/img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
+            text-align: center;
+            padding-top: 150px;
+            padding-bottom: 100px;
+
+        }
+
+        header p {
+            font-size: 30px;
+            font-family: Catamaran, Helvetica, Arial, sans-serif;
+            width: 500px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            line-height: 39px;
+            letter-spacing: 1px;
+        }
+
+        header button {
+            background: none;
+            border: solid white 1px;
+            padding: 15px 45px;
+            color: white;
+            border-radius: 38px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #fdcc52;
+        }
+
+        @media all and (min-width: 992px) {
+
+            #content,
+            #device {
+                /*                border: solid;*/
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            header p {
+                font-size: 50px;
+
+            }
+        }
+
+        /*        download */
+        #download img {
+            width: 202.5px;
+            height: 60px;
+        }
+
+        #download h1 {
+            font-size: 50px;
+            font-weight: 299;
+            font-family: Catamaran, Helvetica, Arial, sans-serif;
+            width: 510px;
+            margin: auto;
+            line-height: 58px;
+        }
+
+        #download h3 {
+            font-family: muli, sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 500px;
+            margin: auto;
+        }
+
+        #download {
+            background: linear-gradient(#fdcc52, #fdc539);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        /*                features*/
+
+
+        .feature div {
+            /*            border: solid blue;*/
+        }
+
+        .feature i {
+            font-size: 80px;
+            background: linear-gradient(to left, #7b4397, #dc2430);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        #features h1 {
+            text-align: center;
+            font-family: Catamaran, Helvetica, Arial, sans-serif;
+            font-weight: 200;
+            letter-spacing: 1px;
+            font-size: 50px;
+            /*            padding: 100px 0px;*/
+        }
+
+        #features p {
+            text-align: center;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 100;
+            color: grey;
+            font-size: 18px;
+        }
+
+        #features hr {
+            width: 100px;
+            background-color: grey;
+            margin: auto;
+            margin-top: 25px;
+        }
+
+        .feature {
+            /*            border: solid red 5px;*/
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .feature .title {
+            font-size: 32px;
+            font-family: Catamaran, Helvetica, Arial, sans-serif;
+        }
+
+        .feature .desc {
+
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-family: Catamaran, Helvetica, Arial, sans-serif;
+            padding: 0px 80px;
+        }
+
+    </style>
+</head>
+<!--Bop the boop -->
+
+<body>
+    <header>
+        <div id="content">
+            <p>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</p>
+            <button>START NOW FOR FREE!</button>
+        </div>
+
+        <div id="device">
+            <img src="https://startbootstrap.github.io/startbootstrap-new-age/device-mockups/iphone_6_plus/iphone_6_plus_white_port.png" alt="" id="phone">
+            <img src="https://startbootstrap.github.io/startbootstrap-new-age/img/demo-screen-1.jpg" alt="" id="picture">
+        </div>
+    </header>
+    <section id="download">
+        <h1>Discover what all the buzz is about!</h1>
+        <h3>Our app is available on any mobile device! Download now to get started!</h3>
+        <a href="https://startbootstrap.github.io/startbootstrap-new-age/#"><img src="https://startbootstrap.github.io/startbootstrap-new-age/img/google-play-badge.svg" alt=""></a>
+        <a href="https://startbootstrap.github.io/startbootstrap-new-age/#"><img src="https://startbootstrap.github.io/startbootstrap-new-age/img/app-store-badge.svg" alt=""></a>
+    </section>
+    <section id="features">
+        <h1>Unlimited Features, Unlimited Fun</h1>
+        <p>Check out what you can do with this app theme!</p>
+        <hr>
+        <div id="device">
+            <img src="https://startbootstrap.github.io/startbootstrap-new-age/device-mockups/iphone_6_plus/iphone_6_plus_white_port.png" alt="" id="phone">
+            <img src="https://startbootstrap.github.io/startbootstrap-new-age/img/demo-screen-1.jpg" alt="" id="picture">
+        </div>
+        <div class="feature">
+            <i class="icon-screen-smartphone text-primary"></i>
+            <div class="title">Device Mockups</div>
+            <div class="desc">Ready to use HTML/CSS device mockups, no Photoshop required!</div>
+        </div>
+        <div class="feature">
+            <i class="icon-camera text-primary"></i>
+            <div class="title">Flexible Use</div>
+            <div class="desc">Put an image, video, animation, or anything else in the screen!</div>
+        </div>
+        <div class="feature">
+            <i class="icon-present text-primary"></i>
+            <div class="title">Free to Use</div>
+            <div class="desc">As always, this theme is free to download and use for any purpose!</div>
+        </div>
+        <div class="feature">
+            <i class="icon-lock-open text-primary"></i>
+            <div class="title">Open Source</div>
+            <div class="desc">Since this theme is MIT licensed, you can use it commercially!</div>
+        </div>
+    </section>
+</body>
+
+</html>
