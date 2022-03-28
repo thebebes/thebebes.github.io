@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>gradient</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=700 height=500></canvas>
+
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var gr = ctx.createLinearGradient(0, 0, 300, 300);
+        gr.addColorStop(0.3,'red');
+        gr.addColorStop(0.5,'purple');
+        gr.addColorStop(0.8,'blue')
+        ctx.arc(200,200,200,0, Math.PI * 2);
+        ctx.fillStyle = gr;
+        ctx.fill()
+    </script>
+</body></html>

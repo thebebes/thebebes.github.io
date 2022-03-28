@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>oops</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id='canvas' width=400 height=800></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        pattern = [
+            [
+                [0, 0, 0],
+                [1, 1, 1],
+                [0, 1, 0]
+            ],
+            [
+                [0, 1, 0],
+                [1, 1, 0],
+                [0, 1, 0]
+            ],
+            [
+                [0, 1, 0],
+                [1, 1, 1],
+                [0, 0, 0]
+            ],
+            [
+                [0, 1, 0],
+                [0, 1, 1],
+                [0, 1, 0]
+            ]
+        ];
+
+        width = canvas.width / 10;
+
+        function drawRect(x, y, color) {
+            ctx.beginPath();
+            ctx.rect(x * width, y * width, width, width);
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        }
+
+        function drawGrid() {
+            for (var row = 0; row < 20; row++) {
+                for (var column = 0; column < 10; column++) {
+                    drawRect(column, row, 'white');
+                }
+            }
+        }
+        drawGrid();
+        curcol = 0;
+        currow = 0;
+
+        currIndex = 0;
+        T = pattern[currIndex];
+
+        function drawTetrimino() {
+            for (var r = 0; r < 3; r++) {
+                for (var c = 0; c < 3; c++) {
+                    if (T[r][c] == 1) {
+                        drawRect(c + curcol, r + currow, 'red');
+                    }
+                }
+            }
+        }
+        drawTetrimino();
+
+        window.addEventListener('keydown', function(e) {
+            if (e.keyCode == 37) {
+                drawGrid();
+                curcol--;
+                drawTetrimino();
+            } else if (e.keyCode == 39) {
+                drawGrid();
+                curcol++;
+                drawTetrimino();
+            } else if (e.keyCode == 40) {
+                drawGrid();
+                currow++;
+                drawTetrimino();
+            } else if (e.keyCode == 38) {
+                // rotate
+                currIndex=?
+                    T=?
+                drawGrid();
+                drawTetrimino();
+            }
+        });
+    </script>
+
+</body></html>
+
+<!--assignment is to make the keys rotate the tetrominoes lolololololololololololol i am the bestest in the entire world and i will complete the assignment tonight and try to become a programmer before college-->
+
+
+
+
+
+

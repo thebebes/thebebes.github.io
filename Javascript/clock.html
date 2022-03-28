@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>clock</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=400 height=500></canvas>
+
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+
+        ctx.font = '30px monospace';
+        setInterval(function() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            time = new Date();
+            hour = time.getHours();
+            mins = time.getMinutes();
+            secs = time.getSeconds();
+            mill = time.getMilliseconds();
+
+            if (hour <= 17) {
+                ctx.fillStyle = 'black'
+            } else {
+                ctx.fillStyle = 'orange';
+            }
+
+            ctx.fillText(hour + ':' + mins + ':' + secs + ':' + mill, 20, 50);
+        }, 1);
+    </script>
+</body></html>
+
+

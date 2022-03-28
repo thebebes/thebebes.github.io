@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=700 height=500></canvas>
+    <script>
+        canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+        x = 100
+        y = 200
+        ctx.fillStyle = '#5c2b2b';
+
+        function drawrect(x, y) {
+            ctx.beginPath();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.rect(x, y, 40, 40);
+            ctx.fill()
+        }
+        //        drawrect(200,100);
+        window.addEventListener('keydown', function(e) {
+            if (e.keyCode == 37) {
+                console.log('left arrow');
+                x -= 40;
+            } else if (e.keyCode == 38) {
+                console.log('up arrow');
+                y -= 40;
+            } else if (e.keyCode == 39) {
+                console.log('right arrow');
+                x += 40;
+            } else if (e.keyCode == 40) {
+                console.log('down arrow');
+                y += 40;
+            }
+            drawrect(x, y);
+            console.log(e.keyCode);
+        });
+    </script>
+</body></html>

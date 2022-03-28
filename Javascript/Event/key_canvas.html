@@ -1,0 +1,30 @@
+c<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=700 height=500></canvas>
+
+    <script>
+        canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+        ctx.font = '50px monospace';
+        y = 100;
+        // learn the keydown, keyup, keypress
+        window.addEventListener('keypress', function(e) {
+            ctx.fillText(e.keyCode, 100, y);
+            y += 50;
+        });
+    </script>
+</body></html>
+
+
+// homework is to make a rectangle move using the arrow keys like in a video game, such as Pong

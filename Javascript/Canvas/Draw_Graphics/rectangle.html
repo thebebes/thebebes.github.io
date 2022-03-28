@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=700 height=500></canvas>
+
+    <script>
+        canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.fillRect(200, 300, 300, 200);
+
+        ctx.beginPath();
+        ctx.fillStyle = 'brown';
+        ctx.fillRect(254, 400, -72, 150);
+
+        ctx.beginPath();
+        ctx.fillStyle = 'red';
+        ctx.fillRect(500, 400, 300, 300);
+
+        ctx.beginPath();
+        ctx.fillStyle = 'brown';
+        ctx.fillRect(500, 400, 200, 100);
+
+        //        ctz.clearRect(100, 100, 50, 50)
+        // x, y, width, height
+    </script>
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+    <style>
+        canvas {
+            border: solid 10px #66ba66;
+        }
+
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=1250 height=1150></canvas>
+
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var a = ctx.createLinearGradient(100, 100, 500, 400);
+        a.addColorStop(0, 'red');
+        a.addColorStop(1, 'orange');
+        ctx.fillStyle = a;
+        ctx.arc(500, 500, 300, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(100, 100, 5, 0, Math.PI * 2);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(500, 400, 5, 0, Math.PI * 2);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        //radial gradient is generated between one circle's edge and another circle's edge         x    y   r
+        a = ctx.createRadialGradient(400, 400, 50, 400, 400, 200);
+        a.addColorStop(0, 'orange');
+        a.addColorStop(1, 'white');
+        ctx.fillStyle = a;
+        ctx.fillRect(0, 500, canvas.width, canvas.height);
+        //
+        ctx.beginPath();
+        ctx.arc(400, 400, 3, 0, Math.PI * 2);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        //
+        ctx.beginPath();
+        ctx.arc(400, 400, 50, 0, Math.PI * 2);
+        ctx.fillStyle = 'green';
+        ctx.fill();
+        //
+        ctx.beginPath();
+        ctx.arc(400, 400, 200, 0, Math.PI * 2);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+        ctx.stroke();
+
+    </script>
+</body>
+
+</html>

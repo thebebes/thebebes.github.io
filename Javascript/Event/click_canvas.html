@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+    <style>
+        canvas {
+           border: solid 10px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=700 height=500></canvas>
+
+    <script>
+        canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+        
+//        window.addEventListener('mousedown', function(e){
+////            ctx.fillText('lol i am the best no one will ever defeat me mwahahahahah iu can try but no one will ever defeat me hahahahahahah lololololololol', e.offsetX,e.offsetY);
+////            ctx.arc(e.offsetX,e.offsetY, 15, 0, Math.PI * 2);
+////            ctx.fill();
+////            console.log(e);
+//            console.log(e.type);
+//
+//        });
+        canvas.addEventListener('click', function(e){
+            console.log(e.type);
+            console.log(e.button);
+            
+        });
+//        canvas.addEventListener('dblclick', function(e){
+//            console.log(e.type);
+//            
+//        });        
+//        canvas.addEventListener('mouseup', function(e){
+//            console.log(e.type);
+//            
+//        });              
+//        canvas.addEventListener('mouseover', function(e){
+//            console.log(e.type);
+//            
+//        });    
+//        canvas.addEventListener('mouseout', function(e){
+//            console.log(e.type);
+//            
+//        });
+//        canvas.addEventListener('mousemove', function(e){
+//            console.log(e.type);
+//            
+//        }); 
+//        canvas.addEventListener('wheel', function(e){
+//            console.log(e.type);
+//            
+//        });
+//        canvas.addEventListener('contextmenu', function(e){
+//            console.log(e.type);
+//            
+//        });  
+    </script>
+</body></html>

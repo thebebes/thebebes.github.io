@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+    <style>
+        canvas {
+            border: solid 5px #66ba66;
+        }
+
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=350 height=700></canvas>
+
+    <script>
+        canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+
+        // blocks:
+        ctx.strokeStyle = 'red';
+        ctx.lineWidth = 4;
+        for (var r = 0; r < 20; r++) {
+            ctx.moveTo(0, r * 35);
+            ctx.lineTo(350, r * 35);
+        }
+        for (var c = 0; c < 10; c++) {
+            ctx.moveTo(c * 35);
+            ctx.lineTo(c * 35, 700);
+
+        }
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tetris_rect</title>
+    <style>
+        canvas {
+            border: solid 5px #66ba66;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width=350 height=700></canvas>
+
+    <script>
+        canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+
+        // blocks 10*20
+        for (var o = 0; o < 20; o++) {
+            for (var i = 0; i < 10; i++) {
+                ctx.strokeRect(i * 35, o * 35, 35, 35)
+            }
+        }
+    </script>
+</body></html>
